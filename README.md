@@ -150,16 +150,3 @@ Test kubectl
 >$ kubectl get nodes
 
 ![](screenshots/get-nodes.png)
-
-## Finally for the Kubernetes part
-
-### Create redis deployment and service
-### copy files in [./kubernetes](kubernetes)
-### Create deployment and service for redis
-deploy redis server
->$ kubectl apply -f redis-deploy.yml
-
-create a ClusterIP service for redis pods 
->$ kubctl apply -f redis-svc.yml 
-
-![](screenshots/get-svc.png)
