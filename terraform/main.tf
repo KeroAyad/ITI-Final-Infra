@@ -35,7 +35,7 @@ resource "google_container_node_pool" "gke-nodes" {
 
   node_config {
     preemptible  = false
-    machine_type = "e2-micro"
+    machine_type = "e2-medium"
     tags         = ["gke-node"]
     # metadata = {
     #   disable-legacy-endpoints = "true"
