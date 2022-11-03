@@ -20,14 +20,14 @@
 <br>
 
 ### build image form dockerfile
->$ docker build -t my-jenkins:latest .
+>$ docker build -t kerolosayad/jenkins-k8s .
 <br>
 
 
 ### Push image to dockerhub
 
 
->$ docker push kerolosayad/my-jenkins
+>$ docker push kerolosayad/jenkins-k8s
 
 
 <br>
@@ -150,3 +150,13 @@ Test kubectl
 >$ kubectl get nodes
 
 ![](screenshots/get-nodes.png)
+
+### Deploy Jenkins
+
+>$ kubectl apply -f jenkins-deploy.yml
+
+>$ kubectl apply -f jenkins-svc.yml
+
+![](screenshots/jenkins-namespace.png)
+
+![](screenshots/Jenkins.png)
